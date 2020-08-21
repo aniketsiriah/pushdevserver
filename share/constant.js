@@ -28,27 +28,19 @@ module.exports.opusConstant = Object.freeze({
         production: true
       },
       optionEpConnect : {
-        // token: {
-        //   cert:"./pushConfig/AuthKey_3Q7LG2FM9M.p8",
-        //   key: "./pushConfig/AuthKey_3Q7LG2FM9M.p8",
-        //   keyId: "3Q7LG2FM9M",
-        //   teamId: "Q9XD7568D9"
-        // },
-        //pfx: "./pushConfig/Certificates_prod.p12",
-        //"cert": "./pushConfig/apns-pro-cert.pem",
-        //"key": "./pushConfig/apns-pro-key.pem",
-        "cert": "./pushConfig/cert.pem",
-        "key": "./pushConfig/key.pem",
-        //"ca":"./pushConfig/apns-pro.pem",
+        
+       // "cert": "./pushConfig/cert.pem",
+       // "key": "./pushConfig/key.pem",
+        "cert": "./pushConfig/apns-ep-dev-cert.pem",
+        "key": "./pushConfig/apns-ep-dev-key.pem",
         "passphrase": "fulcrum#1",
-        //"voip":false,
         
         // proxy: {
         //   host: "gateway.push.apple.com",
         //   port: 2195
         // },
-        gateway: 'gateway.push.apple.com:2195',
-        production: true
+        gateway: 'gateway.sanbox.push.apple.com:2195',
+        production: false
       },
       serviceAccountPath : "../pushConfig/opus-neo-firebase-adminsdk-c65n3-a3f2c53c2f.json",
       otherServiceAccoutPath : "../pushConfig/flopusneo-firebase-adminsdk-1b5iw-c9e958ac2c.json",
