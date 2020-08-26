@@ -344,7 +344,6 @@ exports.sendNotification = (req, res) => {
                        "messageFrom":item.notification.body,
                        "attachment-url":apnURL
                       },
-                //category:"Billing",
                 alert:item.notification.title,
                 priority: 5,
                 sound:"ping.aiff",
